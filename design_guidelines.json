@@ -1,0 +1,245 @@
+{
+  "project_title": "Vipan Kumar — Award Winning Editorial Developer Portfolio",
+  "theme_strategy": {
+    "default_mode": "dark",
+    "aesthetic_archetype": "Swiss Kinetic Brutalism meets High-Contrast Dark Editorial",
+    "palette_family": "Architectural Obsidian (#090A0F) tinted with Deep Slate (#12151E), Crisp Polar White (#F8FAFC), and High-Voltage Kinetic Neon Lime Accent (#54F446 / #64FFDA)",
+    "mode_toggle_support": true
+  },
+  "typography": {
+    "heading_font": "Syne / Cabinet Grotesk / Barlow Condensed (Expressive, Heavy Weight, Tight Tracking)",
+    "body_font": "Space Grotesk / Inter / JetBrains Mono (High clarity, precise tracking)",
+    "mono_font": "JetBrains Mono / Fira Code (For code snippets, metrics, overlines)",
+    "hierarchy_rules": {
+      "H1_Hero": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-none uppercase",
+      "H2_Section": "text-3xl sm:text-5xl font-bold tracking-tight uppercase border-b pb-4 mb-8",
+      "H3_Subheading": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "Body_Text": "text-base leading-relaxed text-slate-300 font-normal",
+      "Overline_Label": "text-xs font-mono tracking-[0.25em] uppercase text-emerald-400 font-bold"
+    }
+  },
+  "colors": {
+    "bg_primary": "#090A0F",
+    "bg_secondary": "#11141F",
+    "bg_card": "rgba(18, 22, 33, 0.75)",
+    "border_color": "rgba(255, 255, 255, 0.12)",
+    "border_active": "#54F446",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "accent_primary": "#54F446",
+    "accent_secondary": "#64FFDA",
+    "accent_glow": "rgba(84, 244, 70, 0.25)",
+    "light_mode": {
+      "bg_primary": "#F8FAFC",
+      "bg_secondary": "#EDF2F7",
+      "bg_card": "rgba(255, 255, 255, 0.85)",
+      "border_color": "rgba(0, 0, 0, 0.12)",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "accent_primary": "#10B981"
+    }
+  },
+  "visual_enhancers": {
+    "lenis_smooth_scroll": "Mandatory integration for fluid, weighted momentum scrolling across all sections",
+    "glassmorphism": "backdrop-blur-xl bg-opacity-70 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "kinetic_marquee": "Infinite smooth drift marquee with ultra-wide gap-32 and stroke-text + filled-text alternating kinetic items",
+    "hire_me_badge": "Rotating circular text badge ('AVAILABLE FOR FREELANCE & FULL TIME • VIPAN KUMAR •') with pulsing inner status light",
+    "bento_grid": "Tetris-style high-density grid for skills & architecture metrics with 1px border grid-lines and neon hover borders",
+    "texture_overlay": "Subtle grain noise overlay filter on background to eliminate flat digital gradients"
+  },
+  "personal_data_and_content": {
+    "name": "Vipan Kumar",
+    "title": "Senior Backend & Full-Stack Architect | Mobile & Cloud Specialist",
+    "current_role": "Software Developer at Benepik Technology",
+    "previous_role": "Ex-Assistant Programmer at Exertica",
+    "education": "Master of Computer Applications (MCA)",
+    "location": "India (IST timezone)",
+    "social_links": {
+      "github": "https://github.com/VipanKumar01",
+      "twitter": "https://twitter.com/VipanKumar01",
+      "instagram": "https://instagram.com/vipan_singh9",
+      "linkedin": "https://linkedin.com/in/vipankumar01",
+      "email": "vipankumar7607@gmail.com"
+    },
+    "impact_metrics": [
+      {
+        "metric": "-30% to -50%",
+        "label": "API Response Time Optimization",
+        "description": "Achieved through HikariCP tuning, Redis layer caching, and query index refactoring"
+      },
+      {
+        "metric": "1,000+",
+        "label": "Concurrent High-Throughput Users",
+        "description": "Handled reliably via Microservices architecture, Kafka queues, and SAGA pattern orchestration"
+      },
+      {
+        "metric": "+60% to +70%",
+        "label": "Batch Processing Performance",
+        "description": "Engineered using Spring Batch parallel chunking and multi-threaded partition processing"
+      },
+      {
+        "metric": "100%",
+        "label": "VAPT & OWASP Security Compliance",
+        "description": "Hardened API endpoints with AES encryption, HMAC signatures, JWT & OAuth2, verified via Burp Suite"
+      }
+    ],
+    "skills_categories": [
+      {
+        "category": "Backend Engineering & Core Java",
+        "skills": ["Spring Boot", "Spring Security", "JWT & OAuth2", "Microservices Architecture", "SAGA Pattern", "Spring Batch", "GraphQL", "REST APIs"]
+      },
+      {
+        "category": "Messaging, Caching & Performance",
+        "skills": ["Apache Kafka", "RabbitMQ", "Redis Cache", "HikariCP Connection Pool", "Database Indexing"]
+      },
+      {
+        "category": "Frontend & Mobile Apps",
+        "skills": ["React.js", "React Native (Expo)", "Tailwind CSS", "JavaScript (ES6+)", "HTML5 / CSS3", "State Management"]
+      },
+      {
+        "category": "Databases & Storage",
+        "skills": ["MySQL", "MS SQL Server", "Firebase", "Supabase", "PostgreSQL"]
+      },
+      {
+        "category": "DevOps, Cloud & Infrastructure",
+        "skills": ["Docker", "Azure Cloud", "AWS S3", "GitLab CI/CD Pipelines", "Nginx"]
+      },
+      {
+        "category": "Security, VAPT & Code Quality",
+        "skills": ["VAPT (OWASP Top 10)", "Burp Suite", "JMeter Load Testing", "AES & HMAC Encryption", "SonarQube Code Audit"]
+      },
+      {
+        "category": "Tools & Payment Systems",
+        "skills": ["Git / GitHub", "Postman / Insomnia", "Razorpay Payment Gateway Integration"]
+      }
+    ],
+    "projects": [
+      {
+        "id": "maktub-ui",
+        "title": "Maktub UI/UX Experience",
+        "category": "Design & UI/UX",
+        "description": "Figma design system and UI prototype for a modern editorial storytelling platform.",
+        "tags": ["Figma", "UI/UX", "Design System"],
+        "link": "https://figma.com",
+        "live_demo": null
+      },
+      {
+        "id": "react-android-app",
+        "title": "React Native Mobile Engine",
+        "category": "Android / Mobile",
+        "description": "High performance cross-platform React Native Android app with offline-first caching and smooth gestures.",
+        "tags": ["React Native", "Expo", "Redux Toolkit", "Android"],
+        "link": "https://github.com/VipanKumar01",
+        "live_demo": null
+      },
+      {
+        "id": "amazon-clone-mobile",
+        "title": "Amazon Mobile Commerce",
+        "category": "Android / Mobile",
+        "description": "Full-fledged e-commerce mobile application replicating Amazon cart, checkout, payment gateway, and order tracking.",
+        "tags": ["React Native", "Firebase", "Razorpay", "Tailwind Native"],
+        "link": "https://github.com/VipanKumar01",
+        "live_demo": null
+      },
+      {
+        "id": "acme-ecommerce-webapp",
+        "title": "ACME Enterprise E-Commerce Engine",
+        "category": "Web App",
+        "description": "Microservices backend powered by Spring Boot, Kafka, and Redis with a high-speed React storefront.",
+        "tags": ["Spring Boot", "Kafka", "Redis", "React.js", "MySQL"],
+        "link": "https://shopping-google.netlify.app",
+        "live_demo": "https://shopping-google.netlify.app"
+      },
+      {
+        "id": "netreach-figma",
+        "title": "Netreach Platform Design",
+        "category": "Design & UI/UX",
+        "description": "Modern SaaS dashboard & networking portal architecture designed in Figma.",
+        "tags": ["Figma", "Prototyping", "SaaS UI"],
+        "link": "https://figma.com",
+        "live_demo": null
+      },
+      {
+        "id": "ai-interview-prep",
+        "title": "AI Interview Prep Mobile",
+        "category": "Android / Mobile",
+        "description": "Interactive mobile application featuring voice & text AI evaluation for technical software roles.",
+        "tags": ["React Native", "OpenAI API", "Expo", "Tailwind"],
+        "link": "https://github.com/VipanKumar01",
+        "live_demo": null
+      },
+      {
+        "id": "live-ai-interview",
+        "title": "Live AI Interview Realtime Portal",
+        "category": "Web App",
+        "description": "Real-time AI interviewing simulator with speech recognition, dynamic feedback scorecards, and backend analytics.",
+        "tags": ["React.js", "Spring Boot", "GraphQL", "Tailwind"],
+        "link": "https://github.com/VipanKumar01",
+        "live_demo": null
+      },
+      {
+        "id": "travel-magic-figma",
+        "title": "Travel Magic App Design",
+        "category": "Design & UI/UX",
+        "description": "Vibrant, high-conversion travel booking and itinerary generator interface.",
+        "tags": ["Figma", "Mobile UI", "Travel Tech"],
+        "link": "https://figma.com",
+        "live_demo": null
+      },
+      {
+        "id": "cynthia-ugwu-temp",
+        "title": "Cynthia Ugwu Creative Portfolio Live Site",
+        "category": "Web App",
+        "description": "Live production frontend portfolio showcasing smooth mouse-following visuals and kinetic editorial design.",
+        "tags": ["React.js", "Framer Motion", "Lenis", "Tailwind"],
+        "link": "https://cynthiaugwutemp.netlify.app",
+        "live_demo": "https://cynthiaugwutemp.netlify.app"
+      }
+    ]
+  },
+  "component_structure": {
+    "Header": "Sticky translucent glass header with logo favicon SVG, nav links, live IST clock, and Theme Toggle",
+    "HeroSection": "Kinetic large mask typography reveal, rotating Hire Me badge, dual CTA ('View Works' / 'Get In Touch'), and interactive 3D particle canvas",
+    "MarqueeSection": "Slow editorial sliding text ribbon with skills & core competencies",
+    "MetricsImpact": "Grid of key architectural achievements (-30-50% API latency, 1000+ concurrent, +60-70% batch speed)",
+    "SkillsBento": "Tetris Bento layout grouping Backend, Messaging, Mobile, DB, Cloud, Security & Tools with interactive hover glows",
+    "SelectedWorks": "Filterable project index (All, Web App, Mobile, Design) with hover image card preview and modal/drawer detail viewer",
+    "ExperienceTimeline": "Chronological timeline detailing Benepik Technology and Exertica experience with key outcomes",
+    "ContactSection": "Interactive contact form calling POST /api/contact, copy-to-clipboard email link, and direct social handles",
+    "Footer": "Large kinetic footer typography, copyright, local time, and back-to-top smooth scroll button"
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1709626011485-6fe000ea2dbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGRhcmslMjBtaW5pbWFsJTIwdGVjaCUyMGdlb21ldHJ5fGVufDB8fHx8MTc5MjA5MDI0M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "Project Abstract Visual 1",
+      "description": "Dark blue geometric abstract pattern for architectural web projects"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1638864616275-9f0b291a2eb6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBtaW5pbWFsJTIwdGVjaCUyMGdlb21ldHJ5fGVufDB8fHx8MTc5MjA5MDI0M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "Project Abstract Visual 2",
+      "description": "Overlapping dark slate geometric squares for mobile & security projects"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVyaW5nJTIwY29kZSUyMGFyY2hpdGVjdHVyZSUyMGRhcmt8ZW58MHx8fHwxNzkyMDkwMjQzfDA&ixlib=rb-4.1.0&q=85",
+      "category": "Software Code Architecture Visual",
+      "description": "MacBook Pro IDE developer code setup with high contrast dark theme"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Ensure Lenis smooth scrolling or Framer Motion scroll mechanics are enabled.",
+    "Include data-testid on every interactive element (buttons, filters, inputs, project cards, links).",
+    "Make sure POST /api/contact endpoint is correctly called by the contact form.",
+    "Display real IST local clock in the header or footer updated every second.",
+    "Provide a smooth dark/light theme toggle button while maintaining high contrast in both themes.",
+    "Implement the rotating circular text badge ('Hire Me') with CSS keyframe animation or Framer Motion.",
+    "Ensure all skills mentioned in Vipan's profile are explicitly displayed in the Skills Bento section."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do NOT use generic centered layouts or simplistic gradients. Create layered depth with z-index hierarchy and glassmorphism.",
+    "Do NOT use universal transition 'transition: all' as it breaks CSS transforms. Use specific properties like transform and opacity.",
+    "Do NOT center align the app container. Respect human natural reading patterns.",
+    "Always include data-testid in kebab-case for all buttons, inputs, links, and cards.",
+    "Use Sonner toast notifications for user interactions like form submission or email copy."
+  ]
+}
