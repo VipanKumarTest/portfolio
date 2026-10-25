@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ArrowUpRight, Building2 } from "lucide-react";
 import { PROJECTS, FILTERS } from "@/data/profile";
 import { Reveal, SectionHead } from "./Primitives";
 import { ProjectVisual } from "./ProjectVisual";
 
+const MotionLink = motion.create(Link);
+
 const Row = ({ p, i, onHover }) => {
-  const linkProps = p.href ? { href: p.href, target: "_blank", rel: "noopener noreferrer" } : {};
-  const Tag = p.href ? motion.a : motion.div;
+  const linkProps = p.to ? { to: p.to } : p.href ? { href: p.href, target: "_blank", rel: "noopener noreferrer" } : {};
+  const Tag = p.to ? MotionLink : p.href ? motion.a : motion.div;
   return (
   <Tag
     layout
@@ -27,7 +30,7 @@ const Row = ({ p, i, onHover }) => {
       <span className="col-span-4 md:col-span-2 flex justify-end items-center gap-2 text-sm text-zinc-300">
         <span className="hidden lg:inline opacity-0 group-hover:opacity-100 transition-opacity">{p.cta || "Company project"}</span>
         <span className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#54f446] group-hover:text-[#0a0b0f] group-hover:border-[#54f446] transition-colors">
-          {p.href ? <ArrowUpRight className="w-4 h-4" /> : <Building2 className="w-4 h-4" />}
+          {p.href || p.to ? <ArrowUpRight className="w-4 h-4" /> : <Building2 className="w-4 h-4" />}
         </span>
       </span>
     </div>

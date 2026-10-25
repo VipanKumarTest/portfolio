@@ -32,6 +32,10 @@
 - Lenis smooth scrolling tuned; marquee and badge now animate even when the device has reduced motion turned on; badge text wraps evenly around the arrow
 - Footer name now fits at every width; header name now shows on phones too
 
+## Update (2026-10-25, b)
+- New page /work/intradiem: hero with role/company/client/scale/stack, overview, Chapter 01 multithreaded batch processing (animated sequential vs parallel diagram with replay + illustrative Java code), Chapter 02 dynamic event scheduling (animated pipeline, event lifecycle, illustrative code), outcomes, back/contact CTAs
+- Intradiem row in Works now links to the case study; app uses react-router; nav links from the case page return to home sections
+
 ## Backlog
 - P0: Real project screenshots, profile photo and resume PDF
 - P1: Project case-study pages; GitHub links for each project

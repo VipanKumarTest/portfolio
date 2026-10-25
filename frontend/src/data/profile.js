@@ -40,7 +40,7 @@ export const SKILLS = [
 const GH = "https://github.com/VipanKumar01";
 
 export const PROJECTS = [
-  { id: "intradiem", title: "Intradiem Application", type: "company", cat: "Workforce Automation", tool: "Sardeck · for Intradiem (US)", hue: "#54f446", desc: "Workforce automation platform for real-time agent activity monitoring, schedule management and automated workflow execution at enterprise scale." },
+  { id: "intradiem", title: "Intradiem Application", type: "company", cat: "Workforce Automation", tool: "Sardeck · for Intradiem (US)", hue: "#54f446", to: "/work/intradiem", cta: "Read case study", desc: "Workforce automation platform for real-time agent activity monitoring, schedule management and automated workflow execution at enterprise scale." },
   { id: "benepik-plus", title: "Benepik Plus", type: "company", cat: "Secure Payments", tool: "Benepik", hue: "#64ffda", desc: "Robust authentication, authorization, API encryption and scalable transaction workflows for secure monetary operations." },
   { id: "benepik-clients", title: "Benepik Client Projects", type: "company", cat: "Microservices & SSO", tool: "Benepik", hue: "#ffb547", desc: "Scalable Spring Boot microservices with SSO-based authentication, centralising user access across enterprise client applications." },
   { id: "maktub", title: "Maktub", type: "design", cat: "UI/UX Design", tool: "Figma", hue: "#54f446", href: "https://www.figma.com/design/xsCw34jZPmiMnzenJjdnMo/Maktub", cta: "Open in Figma" },
