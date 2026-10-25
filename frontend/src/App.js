@@ -17,6 +17,7 @@ import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { scrollToId } from "@/lib/scroll";
 import CaseIntradiem from "@/pages/CaseIntradiem";
+import CaseBenepikPlus from "@/pages/CaseBenepikPlus";
 
 const Home = () => {
   const [ready, setReady] = useState(!!window.location.hash);
@@ -85,6 +86,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work/intradiem" element={<CaseIntradiem />} />
+          <Route path="/work/benepik-plus" element={<CaseBenepikPlus />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="bottom-left" theme="dark" />

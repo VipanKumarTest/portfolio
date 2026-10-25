@@ -41,7 +41,7 @@ const GH = "https://github.com/VipanKumar01";
 
 export const PROJECTS = [
   { id: "intradiem", title: "Intradiem Application", type: "company", cat: "Workforce Automation", tool: "Sardeck · for Intradiem (US)", hue: "#54f446", to: "/work/intradiem", cta: "Read case study", desc: "Workforce automation platform for real-time agent activity monitoring, schedule management and automated workflow execution at enterprise scale." },
-  { id: "benepik-plus", title: "Benepik Plus", type: "company", cat: "Secure Payments", tool: "Benepik", hue: "#64ffda", desc: "Robust authentication, authorization, API encryption and scalable transaction workflows for secure monetary operations." },
+  { id: "benepik-plus", title: "Benepik Plus", type: "company", cat: "Secure Payments", tool: "Benepik", hue: "#64ffda", to: "/work/benepik-plus", cta: "Read case study", desc: "Robust authentication, authorization, API encryption and scalable transaction workflows for secure monetary operations." },
   { id: "benepik-clients", title: "Benepik Client Projects", type: "company", cat: "Microservices & SSO", tool: "Benepik", hue: "#ffb547", desc: "Scalable Spring Boot microservices with SSO-based authentication, centralising user access across enterprise client applications." },
   { id: "maktub", title: "Maktub", type: "design", cat: "UI/UX Design", tool: "Figma", hue: "#54f446", href: "https://www.figma.com/design/xsCw34jZPmiMnzenJjdnMo/Maktub", cta: "Open in Figma" },
   { id: "ecommerce", title: "E-Commerce WebApp", type: "web", cat: "Web Development", tool: "ACME", hue: "#64ffda", href: GH, cta: "View on GitHub" },
@@ -62,6 +62,15 @@ export const FILTERS = [
   { id: "mobile", label: "Android" },
   { id: "design", label: "Figma" },
 ];
+
+export const BATCH_RESULT = {
+  headline: "60–70%",
+  label: "Better batch processing performance",
+  scale: 170,
+  before: { label: "Before · single-threaded", value: "Baseline", bar: 100 },
+  after: { label: "After · multithreaded", value: "+60–70%", bar: 165 },
+  note: "Batch throughput relative to the single-threaded baseline, after moving independent tasks onto a parallel worker pool.",
+};
 
 export const EXPERIENCE = [
   { role: "Software Engineer", org: "Sardeck Services Pvt. Ltd.", client: "Client: Intradiem (US)", href: null, when: "Current", text: "Working on Intradiem microservices for a scalable workforce automation platform supporting 300K+ daily users — real-time agent activity, scheduling and workflow management. Implemented multithreading in batch processing for parallel task execution, and built dynamic event scheduling for flexible, event-driven background processing." },

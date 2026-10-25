@@ -2,6 +2,7 @@ import { Reveal, SectionHead } from "@/components/site/Primitives";
 import { BatchDiagram } from "./BatchDiagram";
 import { SchedulePipeline, EventQueue } from "./SchedulePipeline";
 import { CodeBlock } from "./CodeBlock";
+import { BatchResult } from "./BatchResult";
 
 const BATCH_CODE = `// Illustrative pattern — simplified, not production code
 ExecutorService pool = Executors.newFixedThreadPool(workers);
@@ -32,7 +33,7 @@ public class EventScheduler {
   }
 }`;
 
-const Point = ({ k, children, dark = true }) => (
+export const Point = ({ k, children, dark = true }) => (
   <div className={`border-t pt-5 ${dark ? "border-white/15" : "border-black/20"}`}>
     <p className={`font-mono text-xs uppercase tracking-[0.2em] ${dark ? "text-[#54f446]" : "text-zinc-600"}`}>{k}</p>
     <p className={`mt-2 leading-relaxed ${dark ? "text-zinc-300" : "text-zinc-700"}`}>{children}</p>
@@ -68,10 +69,11 @@ export const BatchChapter = () => (
       <Reveal delay={0.1} className="lg:col-span-5 lg:col-start-8 space-y-6">
         <Point k="Challenge">Batch jobs on a platform at this scale handle large volumes of tasks — run one after another, they take longer than they need to.</Point>
         <Point k="What I built">Multithreading inside batch processing, so independent tasks are split into chunks and executed in parallel across a worker pool.</Point>
-        <Point k="Result">Parallel task execution and improved processing efficiency for batch workloads.</Point>
+        <Point k="Result">Parallel task execution and 60–70% better batch processing performance.</Point>
       </Reveal>
     </div>
     <Reveal><BatchDiagram /></Reveal>
+    <Reveal><BatchResult /></Reveal>
     <Reveal className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
       <div className="lg:col-span-7"><CodeBlock file="ParallelBatch.java" code={BATCH_CODE} testid="batch-code" /></div>
       <div className="lg:col-span-5 rounded-3xl border border-white/10 p-6 md:p-8 space-y-4">

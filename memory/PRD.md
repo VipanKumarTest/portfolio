@@ -36,6 +36,11 @@
 - New page /work/intradiem: hero with role/company/client/scale/stack, overview, Chapter 01 multithreaded batch processing (animated sequential vs parallel diagram with replay + illustrative Java code), Chapter 02 dynamic event scheduling (animated pipeline, event lifecycle, illustrative code), outcomes, back/contact CTAs
 - Intradiem row in Works now links to the case study; app uses react-router; nav links from the case page return to home sections
 
+## Update (2026-10-25, c)
+- Intradiem case study: added "Measured result" block (60–70% better batch performance, before/after bars) driven by BATCH_RESULT in src/data/profile.js; no real timings were provided yet, so swap in actual before/after times there when available
+- New page /work/benepik-plus: hero, overview, 01 authentication & authorization (animated request path + Spring Security code), 02 API encryption & integrity (live AES scramble demo, HMAC code), 03 transaction workflows, outcomes; linked from Works and cross-linked with Intradiem
+- Benepik Plus security stack assumed to be JWT & OAuth2, AES and HMAC (user skipped the confirmation question)
+
 ## Backlog
 - P0: Real project screenshots, profile photo and resume PDF
 - P1: Project case-study pages; GitHub links for each project
