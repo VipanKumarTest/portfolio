@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Building2 } from "lucide-react";
 import { PROJECTS, FILTERS } from "@/data/profile";
 import { Reveal, SectionHead } from "./Primitives";
 import { ProjectVisual } from "./ProjectVisual";
 
-const Row = ({ p, i, onHover }) => (
-  <motion.a
+const Row = ({ p, i, onHover }) => {
+  const linkProps = p.href ? { href: p.href, target: "_blank", rel: "noopener noreferrer" } : {};
+  const Tag = p.href ? motion.a : motion.div;
+  return (
+  <Tag
     layout
-    href={p.href}
-    target="_blank"
-    rel="noopener noreferrer"
+    {...linkProps}
     onMouseEnter={() => onHover(p)}
     onMouseLeave={() => onHover(null)}
     className="group block border-b border-white/15 py-6 md:py-8"
@@ -24,14 +25,20 @@ const Row = ({ p, i, onHover }) => (
       </h3>
       <span className="col-span-6 col-start-3 md:col-start-auto md:col-span-3 text-sm text-zinc-300">{p.cat} <span className="text-zinc-500">/</span> {p.tool}</span>
       <span className="col-span-4 md:col-span-2 flex justify-end items-center gap-2 text-sm text-zinc-300">
-        <span className="hidden lg:inline opacity-0 group-hover:opacity-100 transition-opacity">{p.cta}</span>
+        <span className="hidden lg:inline opacity-0 group-hover:opacity-100 transition-opacity">{p.cta || "Company project"}</span>
         <span className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#54f446] group-hover:text-[#0a0b0f] group-hover:border-[#54f446] transition-colors">
-          <ArrowUpRight className="w-4 h-4" />
+          {p.href ? <ArrowUpRight className="w-4 h-4" /> : <Building2 className="w-4 h-4" />}
         </span>
       </span>
     </div>
-  </motion.a>
-);
+    {p.desc && (
+      <div className="grid grid-cols-12 gap-4 mt-3">
+        <p className="col-span-10 col-start-3 md:col-start-2 md:col-span-6 text-sm text-zinc-400 leading-relaxed" data-testid={`project-desc-${p.id}`}>{p.desc}</p>
+      </div>
+    )}
+  </Tag>
+  );
+};
 
 export const Works = () => {
   const [filter, setFilter] = useState("all");

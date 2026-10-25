@@ -1,8 +1,9 @@
 export const PROFILE = {
   name: "Vipan Kumar",
   email: "vipankumar7607@gmail.com",
-  role: "Software Developer",
-  company: "Benepik Technology",
+  role: "Software Engineer",
+  company: "Sardeck Services Pvt. Ltd.",
+  client: "Intradiem (US)",
   socials: [
     { label: "GitHub", href: "https://github.com/VipanKumar01" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/vipankumar01" },
@@ -11,7 +12,15 @@ export const PROFILE = {
   ],
 };
 
+export const CAREER_START = new Date(2024, 7, 1);
+
+export const yearsOfExperience = () => {
+  const yrs = (Date.now() - CAREER_START.getTime()) / (365.25 * 864e5);
+  return (Math.floor(yrs * 10) / 10).toFixed(1);
+};
+
 export const IMPACT = [
+  { value: "300K+", label: "Daily users on Intradiem", note: "Microservices for a US workforce automation platform — real-time agent activity, scheduling & workflows", featured: true },
   { value: "30–50%", label: "Faster API response times", note: "Reduced latency across production endpoints" },
   { value: "1000+", label: "Concurrent users", note: "Systems scaled to handle real load" },
   { value: "60–70%", label: "Batch performance gain", note: "Improved batch job throughput" },
@@ -31,6 +40,9 @@ export const SKILLS = [
 const GH = "https://github.com/VipanKumar01";
 
 export const PROJECTS = [
+  { id: "intradiem", title: "Intradiem Application", type: "company", cat: "Workforce Automation", tool: "Sardeck · for Intradiem (US)", hue: "#54f446", desc: "Workforce automation platform for real-time agent activity monitoring, schedule management and automated workflow execution at enterprise scale." },
+  { id: "benepik-plus", title: "Benepik Plus", type: "company", cat: "Secure Payments", tool: "Benepik", hue: "#64ffda", desc: "Robust authentication, authorization, API encryption and scalable transaction workflows for secure monetary operations." },
+  { id: "benepik-clients", title: "Benepik Client Projects", type: "company", cat: "Microservices & SSO", tool: "Benepik", hue: "#ffb547", desc: "Scalable Spring Boot microservices with SSO-based authentication, centralising user access across enterprise client applications." },
   { id: "maktub", title: "Maktub", type: "design", cat: "UI/UX Design", tool: "Figma", hue: "#54f446", href: "https://www.figma.com/design/xsCw34jZPmiMnzenJjdnMo/Maktub", cta: "Open in Figma" },
   { id: "ecommerce", title: "E-Commerce WebApp", type: "web", cat: "Web Development", tool: "ACME", hue: "#64ffda", href: GH, cta: "View on GitHub" },
   { id: "live-ai", title: "Live AI Interview", type: "mobile", cat: "Mobile Development", tool: "React Native", hue: "#f2f1ec", href: GH, cta: "View on GitHub" },
@@ -45,15 +57,17 @@ export const PROJECTS = [
 
 export const FILTERS = [
   { id: "all", label: "All" },
+  { id: "company", label: "Company" },
   { id: "web", label: "Web" },
   { id: "mobile", label: "Android" },
   { id: "design", label: "Figma" },
 ];
 
 export const EXPERIENCE = [
-  { role: "Software Developer", org: "Benepik Technology", href: "https://benepik.com/", when: "Current", text: "Building secure, scalable and user-focused applications — backend systems in Spring Boot with React.js and React Native on the front." },
-  { role: "Assistant Programmer", org: "Exertica", href: "https://exertica.com/", when: "Previous", text: "Designed and developed digital solutions across web and backend systems." },
-  { role: "Master of Computer Applications", org: "MCA", href: null, when: "Education", text: "Post-graduate degree in computer applications." },
+  { role: "Software Engineer", org: "Sardeck Services Pvt. Ltd.", client: "Client: Intradiem (US)", href: null, when: "Current", text: "Working on Intradiem microservices for a scalable workforce automation platform supporting 300K+ daily users — real-time agent activity, scheduling and workflow management. Implemented multithreading in batch processing for parallel task execution, and built dynamic event scheduling for flexible, event-driven background processing." },
+  { role: "Software Developer", org: "Benepik Technology", href: "https://benepik.com/", when: "Previous", text: "Built Spring Boot microservices and SSO-based authentication for enterprise client applications, and hardened Benepik Plus with authentication, authorization, API encryption and secure transaction workflows." },
+  { role: "Master of Computer Applications", org: "MCA", href: null, when: "2023 — 2025", text: "Post-graduate degree in computer applications." },
+  { role: "Bachelor of Computer Applications", org: "BCA", href: null, when: "2020 — 2023", text: "Undergraduate degree in computer applications." },
 ];
 
 export const MARQUEE = ["Spring Boot", "Microservices", "Kafka", "Redis", "React.js", "React Native", "Docker", "Azure", "GraphQL", "VAPT"];

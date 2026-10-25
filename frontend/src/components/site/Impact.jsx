@@ -9,15 +9,15 @@ export const Impact = () => (
         Backends that stay fast under pressure — and stay <span className="bg-[#0a0b0f] text-[#54f446] px-3">secure</span> when it matters.
       </h2>
     </Reveal>
-    <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-black/20">
+    <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-black/20">
       {IMPACT.map((m, i) => (
-        <Reveal key={m.label} delay={i * 0.08} className="border-r border-b border-black/20">
-          <div className="group p-6 md:p-8 min-h-[260px] flex flex-col justify-between hover:bg-[#0a0b0f] hover:text-[#f2f1ec] transition-colors duration-500" data-testid={`impact-metric-${i}`}>
-            <span className="font-mono text-xs text-zinc-600 group-hover:text-zinc-400">0{i + 1}</span>
+        <Reveal key={m.label} delay={i * 0.08} className={`border-r border-b border-black/20 ${m.featured ? "sm:col-span-2" : ""}`}>
+          <div className={`group p-6 md:p-8 min-h-[260px] flex flex-col justify-between transition-colors duration-500 ${m.featured ? "bg-[#0a0b0f] text-[#f2f1ec]" : "hover:bg-[#0a0b0f] hover:text-[#f2f1ec]"}`} data-testid={`impact-metric-${i}`}>
+            <span className={`font-mono text-xs ${m.featured ? "text-zinc-400" : "text-zinc-600 group-hover:text-zinc-400"}`}>0{i + 1}{m.featured ? " — Currently at Sardeck → Intradiem" : ""}</span>
             <div>
-              <p className="font-display font-extrabold tracking-tighter text-6xl md:text-7xl group-hover:text-[#54f446] transition-colors">{m.value}</p>
+              <p className={`font-display font-extrabold tracking-tighter text-6xl md:text-7xl transition-colors ${m.featured ? "text-[#54f446]" : "group-hover:text-[#54f446]"}`}>{m.value}</p>
               <p className="mt-3 font-semibold">{m.label}</p>
-              <p className="mt-1 text-sm text-zinc-600 group-hover:text-zinc-400">{m.note}</p>
+              <p className={`mt-1 text-sm ${m.featured ? "text-zinc-400" : "text-zinc-600 group-hover:text-zinc-400"}`}>{m.note}</p>
             </div>
           </div>
         </Reveal>

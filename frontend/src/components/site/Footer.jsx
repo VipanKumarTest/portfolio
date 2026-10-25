@@ -13,7 +13,7 @@ export const Footer = () => {
           Back to top <ArrowUp className="w-3.5 h-3.5" />
         </button>
       </div>
-      <p className="mt-10 font-display font-extrabold uppercase tracking-[-0.06em] leading-[0.8] text-[19vw] text-[#f2f1ec] whitespace-nowrap select-none">
+      <p className="mt-10 font-display font-extrabold uppercase tracking-[-0.06em] leading-[0.8] text-[15vw] text-[#f2f1ec] whitespace-nowrap select-none" data-testid="footer-name">
         Vipan<span className="text-[#54f446]">.</span>Kumar
       </p>
     </footer>

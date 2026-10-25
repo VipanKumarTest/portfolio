@@ -5,6 +5,7 @@ import { MaskLine, Overline } from "./Primitives";
 import { HireBadge } from "./HireBadge";
 import { CodeCard } from "./CodeCard";
 import { scrollToId } from "@/lib/scroll";
+import { yearsOfExperience } from "@/data/profile";
 
 const WORDS = ["Web.", "APIs.", "Android."];
 
@@ -32,6 +33,7 @@ const RotatingWord = () => {
 
 export const Hero = ({ ready }) => {
   const ref = useRef(null);
+  const years = yearsOfExperience();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const xLeft = useTransform(scrollYProgress, [0, 1], ["0%", "-18%"]);
   const xRight = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
@@ -52,8 +54,8 @@ export const Hero = ({ ready }) => {
       <div className="absolute -top-40 right-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#54f446]/10 blur-[120px]" />
 
       <div className="relative flex items-start justify-between gap-6">
-        <MaskLine play={ready} delay={0.3}><Overline>Backend Developer — Spring Boot</Overline></MaskLine>
-        <MaskLine play={ready} delay={0.4} className="hidden md:block"><span className="font-mono text-xs text-zinc-400">India · Available for work</span></MaskLine>
+        <MaskLine play={ready} delay={0.3}><Overline>Backend Engineer — Spring Boot</Overline></MaskLine>
+        <MaskLine play={ready} delay={0.4} className="hidden md:block"><span className="font-mono text-xs text-zinc-400">Sardeck Services → Intradiem (US) · India</span></MaskLine>
       </div>
 
       <h1 className="relative font-display font-extrabold uppercase tracking-[-0.06em] leading-[0.82] text-[22vw] md:text-[15vw] mt-10 md:mt-6" data-testid="hero-name">
@@ -72,8 +74,12 @@ export const Hero = ({ ready }) => {
             <div className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none tracking-tighter"><RotatingWord /></div>
           </MaskLine>
           <motion.p initial={{ opacity: 0 }} animate={ready ? { opacity: 1 } : undefined} transition={{ delay: 1.1, duration: 0.8 }} className="mt-5 text-zinc-300 max-w-md text-sm md:text-base leading-relaxed">
-            Software Developer at Benepik. Secure, scalable backends in Spring Boot — and smooth front-ends with React.js and React Native. Currently levelling up on Azure &amp; AWS.
+            Software Engineer at Sardeck Services, building microservices for Intradiem — a US workforce automation platform serving 300K+ daily users. Secure, scalable backends in Spring Boot, plus React.js and React Native on the front.
           </motion.p>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={ready ? { opacity: 1, y: 0 } : undefined} transition={{ delay: 1.18, duration: 0.8 }} className="mt-6 flex items-end gap-4" data-testid="hero-experience">
+            <span className="font-display font-extrabold tracking-tighter text-6xl md:text-7xl leading-[0.8] text-[#54f446]" data-testid="hero-experience-years">{years}<span className="text-[#f2f1ec] text-3xl md:text-4xl">+</span></span>
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-300 leading-relaxed pb-1">Years of<br />experience</span>
+          </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={ready ? { opacity: 1, y: 0 } : undefined} transition={{ delay: 1.25, duration: 0.8 }} className="mt-8 flex flex-wrap gap-3">
             <button onClick={() => scrollToId("#work")} className="group inline-flex items-center gap-3 rounded-full bg-[#f2f1ec] text-[#0a0b0f] px-6 py-3.5 font-semibold hover:bg-[#54f446] transition-colors" data-testid="hero-view-work-btn">
               Check out my work <ArrowDownRight className="w-4 h-4 transition-transform group-hover:rotate-[-45deg]" />
@@ -91,14 +97,15 @@ export const Hero = ({ ready }) => {
           </motion.div>
         </div>
       </div>
-      <motion.div
-        className="absolute right-4 md:right-10 top-36 md:top-[30%] scale-[0.6] md:scale-100 origin-right"
-        initial={{ scale: 0, rotate: -90 }}
-        animate={ready ? { scale: 1, rotate: 0 } : undefined}
-        transition={{ delay: 1.2, duration: 1, ease: [0.7, 0, 0.2, 1] }}
-      >
-        <HireBadge />
-      </motion.div>
+      <div className="absolute right-3 md:right-12 top-[134px] md:top-[30%] scale-[0.8] md:scale-125 origin-top-right">
+        <motion.div
+          initial={{ scale: 0, rotate: -90 }}
+          animate={ready ? { scale: 1, rotate: 0 } : undefined}
+          transition={{ delay: 1.2, duration: 1, ease: [0.7, 0, 0.2, 1] }}
+        >
+          <HireBadge />
+        </motion.div>
+      </div>
     </section>
   );
 };

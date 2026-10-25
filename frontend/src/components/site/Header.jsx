@@ -32,7 +32,7 @@ export const Header = ({ ready }) => {
       <div className="flex items-center justify-between gap-4 rounded-full border border-white/10 bg-[#0a0b0f]/85 backdrop-blur-xl pl-2 pr-2 md:pl-3 py-2">
         <button onClick={() => scrollToId("#top")} className="flex items-center gap-3 text-[#f2f1ec]" data-testid="header-logo-btn">
           <Logo className="w-9 h-9" />
-          <span className="hidden sm:block font-display font-bold tracking-tight">Vipan Kumar</span>
+          <span className="font-display font-bold tracking-tight whitespace-nowrap" data-testid="header-name">Vipan Kumar</span>
         </button>
         <nav className="hidden md:flex items-center gap-8">
           {LINKS.map((l) => (

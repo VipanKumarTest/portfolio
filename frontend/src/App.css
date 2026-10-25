@@ -39,11 +39,11 @@ body {
   paint-order: stroke fill;
 }
 
-.marquee-track { animation: marquee 60s linear infinite; }
+.marquee-track { animation: marquee 40s linear infinite; will-change: transform; }
 .marquee-track.reverse { animation-direction: reverse; animation-duration: 75s; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-.spin-slow { animation: spin 18s linear infinite; }
+.spin-slow { animation: spin 14s linear infinite; transform-origin: 50% 50%; will-change: transform; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .hairline-grid { background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 64px 64px; }
@@ -51,6 +51,3 @@ body {
 .link-under { background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat; transition: background-size 0.4s cubic-bezier(.7,0,.2,1); }
 .link-under:hover { background-size: 100% 1px; }
 
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track, .spin-slow { animation: none; }
-}

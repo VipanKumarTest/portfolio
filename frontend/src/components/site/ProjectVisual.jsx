@@ -38,7 +38,7 @@ const Canvas = ({ p }) => (
   </div>
 );
 
-const SHAPES = { mobile: Phone, web: Browser, design: Canvas };
+const SHAPES = { mobile: Phone, web: Browser, design: Canvas, company: Browser };
 
 export const ProjectVisual = ({ p, className = "" }) => {
   const Shape = SHAPES[p.type];

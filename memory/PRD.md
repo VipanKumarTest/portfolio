@@ -24,6 +24,14 @@
 - Footer with a live IST clock
 - VK monogram logo, also used as the SVG favicon
 
+## Update (2026-10-25)
+- Current role is now Software Engineer at Sardeck Services Pvt. Ltd. (client Intradiem, US); Benepik moved to previous role; Exertica removed
+- Hero overline changed to "Backend Engineer — Spring Boot"; hero shows years of experience, calculated from 1 Aug 2024 and rounded down to one decimal
+- Added 3 company projects at the top of Works plus a "Company" filter; added a 300K+ users impact tile
+- Education: MCA 2023–2025 and BCA 2020–2023
+- Lenis smooth scrolling tuned; marquee and badge now animate even when the device has reduced motion turned on; badge text wraps evenly around the arrow
+- Footer name now fits at every width; header name now shows on phones too
+
 ## Backlog
 - P0: Real project screenshots, profile photo and resume PDF
 - P1: Project case-study pages; GitHub links for each project

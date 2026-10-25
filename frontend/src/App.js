@@ -20,7 +20,7 @@ function App() {
   const done = useCallback(() => setReady(true), []);
 
   useEffect(() => {
-    const lenis = new Lenis({ duration: 1.25, smoothWheel: true });
+    const lenis = new Lenis({ lerp: 0.075, smoothWheel: true, wheelMultiplier: 0.95, anchors: true });
     window.__lenis = lenis;
     let id = requestAnimationFrame(function raf(t) {
       lenis.raf(t);
